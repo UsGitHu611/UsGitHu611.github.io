@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "UpheavalPro Regular";
+    src: url("../fonts/UpheavalPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Chiller";
+    src: url("../fonts/ChillerLET.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Downcome";
+    src: url("../fonts/Downcome V2.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Bmspa";
+    src: url("../fonts/BMSPA___.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Baron-kuffner";
+    src: url("../fonts/baron-kuffner.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/Futura Extra Black Condensed.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "FontdinerdotcomLoungy";
+    src: url("../fonts/FontdinerdotcomLoungy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Anklepants";
+    src: url("../fonts/anklepants.ttf") format("truetype");
+}

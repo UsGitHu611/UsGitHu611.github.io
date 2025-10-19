@@ -1,0 +1,285 @@
+[
+  {
+    "id": "D1",
+    "label": "The Suffering",
+    "styleLogo": {
+      "color": "rgb(223 224 89)"
+    },
+    "list": [
+      {
+        "id": "Dd1",
+        "reference": "D1",
+        "phrase": "По крайней мере бох меня любит..",
+        "time": "191:197"
+      },
+      {
+        "id": "Dd2",
+        "reference": "D1",
+        "phrase": "Вистинг момент",
+        "time": "292:300"
+      },
+      {
+        "id": "Dd3",
+        "reference": "D1",
+        "phrase": "Куча кримнерей",
+        "time": "390:395"
+      },
+      {
+        "id": "Dd4",
+        "reference": "D1",
+        "phrase": "Том! Том том том!",
+        "time": "637:643"
+      },
+      {
+        "id": "Dd5",
+        "reference": "D1",
+        "phrase": "Полу человек..Кроме одного тела..",
+        "time": "721:727"
+      },
+      {
+        "id": "Dd6",
+        "reference": "D1",
+        "phrase": "Да! Но блин этоже ужасно не так ли!?",
+        "time": "791:795"
+      },
+      {
+        "id": "Dd7",
+        "reference": "D1",
+        "phrase": "Не потеряй тебя там..",
+        "time": "1135:1139"
+      },
+      {
+        "id": "Dd8",
+        "reference": "D1",
+        "phrase": "Делема о электрощетке №1 Начало",
+        "time": "1176:1180"
+      },
+      {
+        "id": "Dd9",
+        "reference": "D1",
+        "phrase": "Сплатун",
+        "time": "1278:1280"
+      },
+      {
+        "id": "Dd10",
+        "reference": "D1",
+        "phrase": "Пошел отсюда к черту! Тупой ресурс",
+        "time": "1397:1401"
+      },
+      {
+        "id": "Dd11",
+        "reference": "D1",
+        "phrase": "Съедобный зомби-банк",
+        "time": "1484:1490"
+      },
+      {
+        "id": "Dd12",
+        "reference": "D1",
+        "phrase": "Переместить нельзя поставить. Статуя из мира Ната/Ноды",
+        "time": "1523:1537"
+      },
+      {
+        "id": "Dd13",
+        "reference": "D1",
+        "phrase": "Перевоплощение крик №1",
+        "time": "1595:1598"
+      },
+      {
+        "id": "Dd14",
+        "reference": "D1",
+        "phrase": "Майкл Джексон",
+        "time": "1680:1693"
+      },
+      {
+        "id": "Dd15",
+        "reference": "D1",
+        "phrase": "Мы переместили телевизор",
+        "time": "2011:2014"
+      },
+      {
+        "id": "Dd16",
+        "reference": "D1",
+        "phrase": "Монолог о смерти / Fira",
+        "time": "2093:2108"
+      },
+      {
+        "id": "Dd17",
+        "reference": "D1",
+        "phrase": "Вопли боли / Вечное заточение",
+        "time": "2115:2127"
+      },
+      {
+        "id": "Dd18",
+        "reference": "D1",
+        "phrase": "Речь француза",
+        "time": "2132:2163"
+      },
+      {
+        "id": "Dd19",
+        "reference": "D1",
+        "phrase": "AAAA АЪЪаааЪЪАЪъъАААА",
+        "time": "2177:2185"
+      },
+      {
+        "id": "Dd20",
+        "reference": "D1",
+        "phrase": "Я не уверен.. Просто я точно не знаю",
+        "time": "2190:2196"
+      },
+      {
+        "id": "Dd21",
+        "reference": "D1",
+        "phrase": "Камуфляжный брезент",
+        "time": "2217:2223"
+      },
+      {
+        "id": "Dd22",
+        "reference": "D1",
+        "phrase": "Посмотри на это!",
+        "time": "2262:2265"
+      },
+      {
+        "id": "Dd23",
+        "reference": "D1",
+        "phrase": "Резкий переход",
+        "time": "2267:2283"
+      },
+      {
+        "id": "Dd24",
+        "reference": "D1",
+        "phrase": "Кокетство",
+        "time": "2290:2301"
+      },
+      {
+        "id": "Dd25",
+        "reference": "D1",
+        "phrase": "Это место сильнее тебя!",
+        "time": "2358:2362"
+      },
+      {
+        "id": "Dd26",
+        "reference": "D1",
+        "phrase": "Будь хорошей, ладно?",
+        "time": "2367:2371"
+      },
+      {
+        "id": "Dd27",
+        "reference": "D1",
+        "phrase": "Пока не сделаешь это!",
+        "time": "2375:2380"
+      },
+      {
+        "id": "Dd28",
+        "reference": "D1",
+        "phrase": "Боль бубенцов",
+        "time": "2404:2406"
+      },
+      {
+        "id": "Dd29",
+        "reference": "D1",
+        "phrase": "Не убивайте меня!",
+        "time": "2704:2708"
+      },
+      {
+        "id": "Dd30",
+        "reference": "D1",
+        "phrase": "Ты мне не нравишься!",
+        "time": "2822:2825"
+      },
+      {
+        "id": "Dd31",
+        "reference": "D1",
+        "phrase": "Звуки хвоста",
+        "time": "3001:3011"
+      },
+      {
+        "id": "Dd32",
+        "reference": "D1",
+        "phrase": "Защити меня от тебя, душа моя..",
+        "time": "3030:3033"
+      },
+      {
+        "id": "Dd33",
+        "reference": "D1",
+        "phrase": "Эмоции",
+        "time": "3059:3066"
+      },
+      {
+        "id": "Dd34",
+        "reference": "D1",
+        "phrase": "Просрал все, мне пиздец холодно",
+        "time": "3128:3132"
+      }
+    ]
+  },
+  {
+    "id": "D2",
+    "label": "Isaac Karaoke",
+    "styleLogo": {
+      "color": "rgb(197, 174, 86)",
+      "textShadow": "rgb(55, 49, 31) 6px 5px 0px"
+    },
+    "list": []
+  },
+  {
+    "id": "D3",
+    "label": "Караоке",
+    "list": []
+  },
+  {
+    "id": "D4",
+    "label": "Shenmue I & II",
+    "list": []
+  },
+  {
+    "id": "D5",
+    "label": "Psychonauts",
+    "styleLogo": {
+      "color": "rgba(252, 224, 43, 0.97)",
+      "textShadow": "rgb(98, 247, 249) 2px 4px 1px"
+    },
+    "list": []
+  },
+  {
+    "id": "D6",
+    "label": "Persona 3 Reload",
+    "styleLogo": {
+      "color": "rgb(98, 216, 245)"
+    },
+    "list": []
+  },
+  {
+    "id": "D7",
+    "label": "Watchmen",
+    "styleLogo": {
+      "color": "rgba(241, 213, 25, 0.92)"
+    },
+    "list": []
+  },
+  {
+    "id": "D8",
+    "label": "Star Wars: Republic Commando",
+    "styleLogo": {
+      "background": "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 2px, transparent 2px), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.6) 1px, transparent 1px), radial-gradient(circle at 40% 90%, rgba(255,255,255,0.7) 1.5px, transparent 1.5px), radial-gradient(circle at 60% 20%, rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(180deg, #E6F7FF 0%, #B3E0FF 25%, #99D5FF 50%, #66C2FF 75%, #3399FF 100%)",
+      "WebkitBackgroundClip": "text",
+      "WebkitTextFillColor": "transparent",
+      "backgroundClip": "text",
+      "color": "transparent",
+      "textShadow": "2px 2px 4px rgba(0, 0, 0, 0.5)"
+    },
+    "list": []
+  },
+  {
+    "id": "D9",
+    "label": "Комментарии за 10 лет",
+    "styleLogo": {
+      "background": "linear-gradient(90deg, #ff00ff 0%, #ee00ff 6%, #dd00ff 12%, #cc00ff 18%, #bb00ff 24%, #aa00ff 30%, #8866ff 36%, #6688ff 42%, #44aaff 48%, #22ccff 54%, #00ffff 60%, #00ffcc 66%, #00ff99 72%, #00ff66 78%, #00ff33 84%, #00ff00 90%, #ccff00 96%, #ffff00 100%)",
+      "WebkitBackgroundClip": "text",
+      "WebkitTextFillColor": "transparent",
+      "backgroundClip": "text",
+      "color": "transparent",
+      "WebkitTextStroke": "5px #000"
+    },
+    "list": []
+  }
+]

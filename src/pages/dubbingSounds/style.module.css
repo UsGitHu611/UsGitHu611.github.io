@@ -1,0 +1,11 @@
+.dubPage{
+    margin: 0 auto;
+}
+
+.title{
+    color: var(--color-main);
+    font-size: var(--font-size-display);
+    text-align: center;
+    font-weight: inherit;
+    padding-block: 3rem 4.5rem;
+}

@@ -1,0 +1,22 @@
+:root{
+    /* fonts */
+    --upheaval-font: "UpheavalPro Regular";
+    --chiller-font: "Chiller";
+    --downcome-font: "Downcome";
+    --bmspa-font: "bmspa";
+    --futura-font: "futura";
+    --anklepants-font: "anklepants";
+    --fontdinerdotcomLoungy-font: "FontdinerdotcomLoungy";
+    --baron-kuffner-font: "baron-kuffner";
+    --commenti-font: 'Arial Black', Gadget, sans-serif;
+
+    /* color */
+    --background-main: oklch(0.2181 0 50);
+    --color-main: oklch(0.9214 0 50);
+    --background-button: lch(91.54 0 102.02);
+    --color-phrase: lch(80.6% 0 139.09);
+
+    /* font-size */
+    --dubbing-item-fz: 1.3rem;
+    --font-size-display:  clamp(3.5rem, 3rem + 5vw, 7rem);
+}
