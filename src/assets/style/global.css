@@ -9,6 +9,8 @@ html, body, #root {
 #root{
     display: grid;
     place-items: center;
+    min-height: 100svh;
+    height: auto;
 }
 
 body {

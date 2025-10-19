@@ -12,6 +12,8 @@
     font-family: sans-serif;
     user-select: none;
     position: relative;
+    flex: 1 0 auto;
+    min-width: fit-content;
 }
 
 
@@ -19,6 +21,7 @@
     padding-inline: 1.3rem;
     padding-block: 0.7rem;
     display: inline-block;
+    width: 100%;
 }
 
 

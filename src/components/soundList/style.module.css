@@ -1,7 +1,7 @@
 .list{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(151px, 1fr));
     place-items: center;
     align-items: baseline;
-    gap: 1rem 0.4rem;
+    grid-gap: 1.3vw;
 }

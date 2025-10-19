@@ -1,5 +1,8 @@
 .dubPage{
     margin: 0 auto;
+    width: 100%;
+    padding-inline: 1.3rem;
+    padding-block-end: 1rem;
 }
 
 .title{
