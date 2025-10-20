@@ -1,42 +1,42 @@
 @font-face {
     font-family: "UpheavalPro Regular";
-    src: url("/public/fonts/UpheavalPro-Regular.woff2") format("woff2");
+    src: url("/fonts/UpheavalPro-Regular.woff2") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Chiller";
-    src: url("/public/fonts/ChillerLET.woff2") format("woff2");
+    src: url("/fonts/ChillerLET.woff2") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Bmspa";
-    src: url("/public/fonts/bmspa.woff") format("woff");
+    src: url("/fonts/bmspa.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Baron-kuffner";
-    src: url("/public/fonts/BaronKuffner.woff2") format("woff2");
+    src: url("/fonts/BaronKuffner.woff2") format("woff2");
     font-display: swap;
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Futura";
-    src: url("/public/fonts/FuturaExtraBlackCondensed.woff2") format("woff2");
+    src: url("/fonts/FuturaExtraBlackCondensed.woff2") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "FontdinerdotcomLoungy";
-    src: url("/public/fonts/Fontdinerdotcom.woff2") format("woff2");
+    src: url("/fonts/Fontdinerdotcom.woff2") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Anklepants";
-    src: url("/public/fonts/Anklepants.woff2") format("woff2");
+    src: url("/fonts/Anklepants.woff2") format("woff2");
     font-display: swap;
 }
