@@ -1,14 +1,7 @@
-@property --bg-current {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: transparent;
-}
-
 .item {
     border-radius: 9999px;
     color: var(--color-main);
     font-size: var(--dubbing-item-fz);
-    background-color: var(--bg-current);
     font-family: sans-serif;
     user-select: none;
     position: relative;

@@ -11,7 +11,7 @@
 .button::before{
     content: "";
     border-radius: inherit;
-    background-color: var(--bg-random);
+    background-color: var(--bg-before);
     position: absolute;
     min-width: 100px;
     top: -5px;

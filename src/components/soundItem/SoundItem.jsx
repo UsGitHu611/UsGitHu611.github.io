@@ -1,10 +1,15 @@
 import {Button} from "../button/Button.jsx";
 import styles from "./style.module.css";
 
-export const SoundItem = ({phrase, time, id, reference}) => {
+export const SoundItem = ({phrase, time, id, reference, index}) => {
     return (
         <li className={styles.item}>
-            <Button time={time} id={id} reference={reference}/>
+            <Button
+                time={time}
+                id={id}
+                reference={reference}
+                index={index}
+            />
             <q className={styles.phrase}>{phrase}</q>
         </li>
     );

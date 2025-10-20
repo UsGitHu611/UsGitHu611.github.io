@@ -1,15 +1,15 @@
 import styles from "./style.module.css";
-import {randomColor} from "../../assets/js/helper.js";
 import {Link} from "react-router";
+import {AVAILABLE_COLORS} from "../../assets/js/constants.js";
 
-export const DubbingItem = ({label, id, styleLogo, list}) => {
+export const DubbingItem = ({label, id, styleLogo, list, index}) => {
 
     return (
         <li
             className={styles.item}
             id={"dd" + id}
             style={{
-                "--bg-current": randomColor(),
+                backgroundColor: AVAILABLE_COLORS[index],
                 viewTransitionName: `item-${id}`
             }}
         ><Link

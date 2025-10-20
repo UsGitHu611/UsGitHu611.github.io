@@ -6,11 +6,12 @@ export const SoundList = ({list}) => {
     return (
         <ul className={styles.list}>
             <AudioProvider>
-                {list.map(({id, phrase, time, reference}) => (
+                {list.map(({id, phrase, time, reference}, index) => (
                     <SoundItem
                         key={id}
                         id={id}
                         phrase={phrase}
+                        index={index}
                         reference={reference}
                         time={time}
                     />
