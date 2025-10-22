@@ -1,0 +1,14 @@
+.bth{
+    position: absolute;
+    top: 4%;
+    color: var(--color-main);
+    border-radius: 9999px;
+    aspect-ratio: 1 / 1;
+    opacity: 0.3;
+    transition: opacity 250ms, background-color 250ms;
+}
+
+.bth:hover{
+    background-color: #333333;
+    opacity: 0.8;
+}

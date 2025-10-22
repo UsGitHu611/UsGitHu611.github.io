@@ -9,18 +9,19 @@ export const FONT_DICT = {
 };
 
 
+
 export const AVAILABLE_COLORS = [
-    "hsl(163deg 21% 30% / 80%)",
-    "hsl(187deg 27% 35% / 80%)",
-    "hsl(200deg 36% 48% / 80%)",
-    "hsl(47deg 25% 47% / 80%)",
-    "hsl(18deg 1% 33% / 80%)",
-    "hsl(126deg 39% 39% / 80%)",
-    "hsl(276deg 21% 34% / 80%)",
-    "hsl(180deg 49% 26% / 80%)",
-    "hsl(247deg 43% 37% / 80%)",
-    "hsl(320deg 29% 37% / 80%)",
-    "hsl(229deg 45% 22% / 80%)",
-    "hsl(0deg 78.9% 55.4% / 80%)",
-    "hsl(299deg 67.1% 55.4% / 80%)"
+    "hsl(163deg 15% 45%)",
+    "hsl(187deg 20% 50%)",
+    "hsl(200deg 25% 65%)",
+    "hsl(47deg 18% 65%)",
+    "hsl(18deg 1% 50%)",
+    "hsl(126deg 25% 55%)",
+    "hsl(276deg 15% 50%)",
+    "hsl(180deg 35% 45%)",
+    "hsl(247deg 30% 55%)",
+    "hsl(320deg 20% 55%)",
+    "hsl(229deg 30% 47%)",
+    "hsl(0deg 60% 70%)",
+    "hsl(299deg 20% 70%)"
 ];

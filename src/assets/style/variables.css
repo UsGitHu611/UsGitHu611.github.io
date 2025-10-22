@@ -7,12 +7,13 @@
     --anklepants-font: "anklepants";
     --fontdinerdotcomLoungy-font: "FontdinerdotcomLoungy";
     --baron-kuffner-font: "baron-kuffner";
+    --tiny-font: "Tiny5";
     --commenti-font: 'Arial Black', Gadget, sans-serif;
 
     /* color */
     --background-main: oklch(0.2181 0 50);
     --color-main: oklch(0.9214 0 50);
-    --background-button: lch(91.54 0 102.02);
+    --background-button: oklch(0.489 0 89.876);
     --color-phrase: lch(80.6% 0 139.09);
 
     /* font-size */

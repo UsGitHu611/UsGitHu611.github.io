@@ -3,7 +3,7 @@ import {useContext} from "react";
 import {audioContext} from "../../context/AudioContext.jsx";
 import {AVAILABLE_COLORS} from "../../assets/js/constants.js";
 
-export const Button = ({time, reference, index}) => {
+export const Button = ({time, reference, index, firstSymbol}) => {
     const playFromTime = useContext(audioContext);
     const clickHandler = () => {
         playFromTime(time, reference);
@@ -12,7 +12,8 @@ export const Button = ({time, reference, index}) => {
     return (
         <button
             className={styles.button}
-            style={{"--bg-before": AVAILABLE_COLORS[index % AVAILABLE_COLORS.length]}}
+            data-first-symbol={firstSymbol}
+            style={{"--bg-color": AVAILABLE_COLORS[index % AVAILABLE_COLORS.length]}}
             onClick={clickHandler}
         />
     );

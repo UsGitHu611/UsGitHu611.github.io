@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: "Tiny5";
+    src: url("/fonts/Tiny5.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Bmspa";
     src: url("/fonts/bmspa.woff") format("woff");
     font-display: swap;

@@ -43,7 +43,7 @@ h3, h4 {
 }
 
 img,
-picture {
+picture, svg {
     max-width: 100%;
     display: block;
 }

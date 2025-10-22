@@ -1,5 +1,6 @@
 import {Button} from "../button/Button.jsx";
 import styles from "./style.module.css";
+import {CopyLinkButton} from "../copyLinkButton/CopyLinkButton.jsx";
 
 export const SoundItem = ({phrase, time, id, reference, index}) => {
     return (
@@ -9,8 +10,14 @@ export const SoundItem = ({phrase, time, id, reference, index}) => {
                 id={id}
                 reference={reference}
                 index={index}
+                firstSymbol={phrase[0]}
             />
-            <q className={styles.phrase}>{phrase}</q>
+            <div className={styles.info}>
+                <q className={styles.phrase} title={phrase}>
+                    {phrase}
+                </q>
+                <CopyLinkButton time={time} reference={reference}/>
+            </div>
         </li>
     );
 }

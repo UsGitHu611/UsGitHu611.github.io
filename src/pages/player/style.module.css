@@ -1,0 +1,38 @@
+.playerSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    border-radius: 99999px;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 300ms;
+    background: linear-gradient(to left, #272727, color-mix(in hsl, #272727 90%, #ffffff 10%));
+    position: relative;
+    z-index: 1;
+}
+
+.button:before{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0;
+    z-index: -1;
+    transform: scale(0.8);
+    background: linear-gradient(to right, #272727, color-mix(in hsl, #272727 90%, #ffffff 10%));
+}
+
+
+.icon{
+    color: var(--color-main);
+    transition: color 300ms;
+}
+
+.button:hover .icon{
+    color: rgba(0, 191, 255, 0.54);
+}

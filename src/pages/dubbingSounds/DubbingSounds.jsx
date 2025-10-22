@@ -2,6 +2,8 @@ import {useLocation, useParams} from "react-router";
 import styles from "./style.module.css";
 import {FONT_DICT} from "../../assets/js/constants.js";
 import {SoundList} from "../../components/soundList/SoundList.jsx";
+import {AudioProvider} from "../../context/AudioContext.jsx";
+import {BTHButton} from "../../components/bthButton/BTHButton.jsx";
 
 export const DubbingSounds = () => {
     const {id} = useParams();
@@ -13,6 +15,8 @@ export const DubbingSounds = () => {
                 viewTransitionName: `item-${id}`
             }}
         >
+            <BTHButton/>
+            <AudioProvider>
             <h1
                 className={styles.title}
                 style={{
@@ -23,6 +27,7 @@ export const DubbingSounds = () => {
                 {state.label}
             </h1>
             <SoundList list={state.list} />
+            </AudioProvider>
         </section>
     );
 }

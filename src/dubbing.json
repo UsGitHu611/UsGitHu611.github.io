@@ -331,6 +331,85 @@
       "WebkitTextStroke": "2.2px #000",
       "fontSize": "clamp(2.5rem, 2rem + 3vw, 5rem)"
     },
-    "list": []
+    "list": [
+      {
+        "id": "Dd1",
+        "reference": "D9",
+        "phrase": "Скульптор",
+        "time": "12:16"
+      },
+      {
+        "id": "Dd2",
+        "reference": "D9",
+        "phrase": "Почему он сюда положил песни",
+        "time": "33:36"
+      },
+      {
+        "id": "Dd3",
+        "reference": "D9",
+        "phrase": "Селякин!",
+        "time": "133:143"
+      },
+      {
+        "id": "Dd4",
+        "reference": "D9",
+        "phrase": "Я просто сделал это вот так..",
+        "time": "162:174"
+      },
+      {
+        "id": "Dd5",
+        "reference": "D9",
+        "phrase": "Ложись! Убирайтесь отсюда к черту",
+        "time": "209:214"
+      },
+      {
+        "id": "Dd6",
+        "reference": "D9",
+        "phrase": "Я даже говорить не умею..",
+        "time": "222:225"
+      },
+      {
+        "id": "Dd7",
+        "reference": "D9",
+        "phrase": "Братья наши меньшие и еще меньше",
+        "time": "239:246"
+      },
+      {
+        "id": "Dd8",
+        "reference": "D9",
+        "phrase": "6 сентября",
+        "time": "366:371"
+      },
+      {
+        "id": "Dd9",
+        "reference": "D9",
+        "phrase": "Зомби нэвэжда",
+        "time": "477:481"
+      },
+      {
+        "id": "Dd10",
+        "reference": "D9",
+        "phrase": "Рамзан Ахматович Гизлатул",
+        "time": "562:570"
+      },
+      {
+        "id": "Dd11",
+        "reference": "D9",
+        "phrase": "Снимай больше!",
+        "time": "647:653"
+      },
+      {
+        "id": "Dd12",
+        "reference": "D9",
+        "phrase": "Бог троицу любит",
+        "time": "664:669"
+      },
+      {
+        "id": "Dd13",
+        "reference": "D9",
+        "phrase": "Разработчик ? Держись",
+        "time": "695:704"
+      }
+    ]
   }
 ]

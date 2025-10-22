@@ -1,0 +1,17 @@
+.copyLink {
+    aspect-ratio: 1 / 1;
+    width: 27px;
+    mask-position: center;
+    -webkit-mask-image: url("/public/icons/link.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: #e5e5e5;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease, opacity 00ms ease;
+    opacity: 1;
+    position: relative;
+}
+
+.copyLink:hover {
+    background-color: deepskyblue;
+}

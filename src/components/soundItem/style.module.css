@@ -10,8 +10,18 @@
 .phrase{
     color: var(--color-phrase);
     font-size: 0.8rem;
-    text-wrap: balance;
     text-align: center;
     quotes: "«" "»";
     font-family: sans-serif;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }

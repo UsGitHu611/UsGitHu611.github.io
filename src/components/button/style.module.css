@@ -2,29 +2,37 @@
     min-width: 120px;
     max-width: 120px;
     aspect-ratio: 1 / 1;
-    background-color: var(--background-button);
-    border-radius: 9999px;
+    background: linear-gradient(to bottom, var(--bg-color), color-mix(in hsl, var(--bg-color) 100%, black 30%));
+    border-radius: 0.6rem;
     position: relative;
-    box-shadow: inset 0 3px 20px black;
+    transition: transform 0.3s;
+}
+
+.button::after{
+    content: attr(data-first-symbol);
+    color: var(--color-main);
+    font-family: monospace;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .button::before{
     content: "";
-    border-radius: inherit;
-    background-color: var(--bg-before);
     position: absolute;
-    min-width: 100px;
-    top: -5px;
+    min-width: 83px;
+    border-radius: 0.8rem;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     aspect-ratio: 1 / 1;
     cursor: pointer;
-    transition: transform 250ms;
-    transform-origin: center;
-    box-shadow: inherit;
+    background: linear-gradient(to left, var(--bg-color), color-mix(in hsl, var(--bg-color) 100%, black 20%));
 }
 
 
-.button:active::before{
-    transform: translateX(-50%) scale(0.9);
+.button:active{
+    transform: scale(0.9);
 }

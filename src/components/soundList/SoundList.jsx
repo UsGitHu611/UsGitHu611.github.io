@@ -1,22 +1,19 @@
 import {SoundItem} from "../soundItem/SoundItem.jsx";
 import styles from "./style.module.css";
-import {AudioProvider} from "../../context/AudioContext.jsx";
 
 export const SoundList = ({list}) => {
     return (
         <ul className={styles.list}>
-            <AudioProvider>
-                {list.map(({id, phrase, time, reference}, index) => (
-                    <SoundItem
-                        key={id}
-                        id={id}
-                        phrase={phrase}
-                        index={index}
-                        reference={reference}
-                        time={time}
-                    />
-                ))}
-            </AudioProvider>
+            {list.map(({id, phrase, time, reference}, index) => (
+                <SoundItem
+                    key={id}
+                    id={id}
+                    phrase={phrase}
+                    index={index}
+                    reference={reference}
+                    time={time}
+                />
+            ))}
         </ul>
     );
 }

@@ -1,4 +1,4 @@
-import {createContext, useRef, useState} from "react";
+import {createContext, useRef} from "react";
 import {audio} from "../assets/js/audio.js";
 
 export const audioContext = createContext(null);
@@ -30,7 +30,7 @@ export const AudioProvider = ({children}) => {
 
         try {
             await audioRef.current.play();
-        }catch (error) {
+        } catch (error) {
             console.log(error);
         }
     };
