@@ -1,0 +1,36 @@
+.settingsSection{
+    margin: 0 auto;
+    width: clamp(250px, 28%, 1800px);
+    height: 100vh;
+    font-family: var(--fira-font), sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    text-align: left;
+    font-size: clamp(2.7rem, 2rem + 3vw, 5rem);
+    padding-block-start: var(--header-height);
+    padding-block-end: 2rem;
+    font-weight: 400;
+}
+
+.label{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: clamp(2rem, 3rem + 4vw, 2rem);
+}
+
+.settingsList{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+@media (max-width: 750px) {
+    .title{
+        padding-block-start: 2rem;
+    }
+}

@@ -1,4 +1,6 @@
 :root{
+    color-scheme: light dark;
+
     /* fonts */
     --upheaval-font: "UpheavalPro Regular";
     --chiller-font: "Chiller";
@@ -9,14 +11,19 @@
     --baron-kuffner-font: "baron-kuffner";
     --tiny-font: "Tiny5";
     --commenti-font: 'Arial Black', Gadget, sans-serif;
+    --fira-font: "FiraSans";
 
     /* color */
     --background-main: oklch(0.2181 0 50);
     --color-main: oklch(0.9214 0 50);
     --background-button: oklch(0.489 0 89.876);
     --color-phrase: lch(80.6% 0 139.09);
+    --accent-color-hover: oklch(0.702 0.105 238.348 / 0.85);
 
     /* font-size */
     --dubbing-item-fz: 1.3rem;
     --font-size-display:  clamp(3.5rem, 3rem + 5vw, 7rem);
+
+    /* dimensions */
+    --header-height: 60px;
 }

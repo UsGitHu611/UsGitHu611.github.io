@@ -16,7 +16,11 @@ export const SoundItem = ({phrase, time, id, reference, index}) => {
                 <q className={styles.phrase} title={phrase}>
                     {phrase}
                 </q>
-                <CopyLinkButton time={time} reference={reference}/>
+                <CopyLinkButton
+                    time={time}
+                    reference={reference}
+                    phrase={phrase}
+                />
             </div>
         </li>
     );

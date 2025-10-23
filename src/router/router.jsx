@@ -6,6 +6,7 @@ import {AudioProvider} from "../context/AudioContext.jsx";
 import {lazy} from "react";
 
 const Player = lazy(() => import("../pages/player/Player.jsx"));
+const Settings = lazy(() => import("../pages/settings/Settings.jsx"));
 
 export const router = createHashRouter([
     {
@@ -20,6 +21,10 @@ export const router = createHashRouter([
             {
                 path: ":id",
                 element: <DubbingSounds/>
+            },
+            {
+                path: "/settings",
+                element: <Settings/>
             },
             {
                 path:"/player",

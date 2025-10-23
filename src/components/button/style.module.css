@@ -1,6 +1,5 @@
 .button{
-    min-width: 120px;
-    max-width: 120px;
+    width: clamp(110px, 4vw, 120px);
     aspect-ratio: 1 / 1;
     background: linear-gradient(to bottom, var(--bg-color), color-mix(in hsl, var(--bg-color) 100%, black 30%));
     border-radius: 0.6rem;

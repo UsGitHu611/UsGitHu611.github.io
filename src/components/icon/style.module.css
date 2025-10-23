@@ -1,0 +1,9 @@
+.icon {
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    display: inline-block;
+    background-color: currentColor;
+    width: clamp(2rem, 3vw, 2.5rem);
+    aspect-ratio: 1 / 1;
+}

@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 0.4rem;
+    width: clamp(300px, 70vw, 800px);
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    height: 100svh;
 }
 
 .button{
@@ -35,4 +40,17 @@
 
 .button:hover .icon{
     color: rgba(0, 191, 255, 0.54);
+}
+
+.title{
+    font-family: Inter, sans-serif;
+    text-wrap: balance;
+    color: var(--color-main);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+[data-color-scheme="light"] .title{
+    color: var(--background-main);
 }

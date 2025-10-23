@@ -3,5 +3,5 @@
     grid-template-columns: repeat(auto-fit, minmax(151px, 1fr));
     place-items: center;
     align-items: baseline;
-    grid-gap: 1.3vw;
+    grid-gap: 1.5vw 1vw;
 }

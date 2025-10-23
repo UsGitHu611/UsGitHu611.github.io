@@ -1,8 +1,8 @@
 import styles from "./style.module.css";
 
-export const CopyLinkButton = ({time, reference}) => {
+export const CopyLinkButton = ({time, reference, phrase}) => {
     const copyLinkHandler =  async () => {
-        const urlWithTimeCode = `${location.host}#/player?reference=${reference}&time=${time}`;
+        const urlWithTimeCode = `${location.host}#/player?reference=${reference}&time=${time}&phrase=${phrase}`;
         await navigator.clipboard.writeText(urlWithTimeCode);
     }
     return (

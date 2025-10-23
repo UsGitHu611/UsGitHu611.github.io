@@ -8,8 +8,11 @@
     background-color: #e5e5e5;
     border-radius: 0.4rem;
     transition: background-color 0.3s ease, opacity 00ms ease;
-    opacity: 1;
     position: relative;
+}
+
+[data-color-scheme="light"] .copyLink{
+    background-color: var(--background-main);
 }
 
 .copyLink:hover {

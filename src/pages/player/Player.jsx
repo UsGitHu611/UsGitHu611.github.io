@@ -7,6 +7,7 @@ export default function Player() {
     const [searchParams, _] = useSearchParams();
     const reference = searchParams.get("reference");
     const time = searchParams.get("time");
+    const phrase = searchParams.get("phrase");
     const playFromTime = useContext(audioContext);
 
     const playAudioHandler = () => {
@@ -15,6 +16,7 @@ export default function Player() {
 
     return (
         <section className={styles.playerSection}>
+            <h1 className={styles.title}>{phrase}</h1>
             <button className={styles.button} onClick={playAudioHandler}>
                 <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
                      viewBox="0 0 24 24">

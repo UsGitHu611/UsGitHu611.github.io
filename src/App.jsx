@@ -1,7 +1,12 @@
 import {Outlet} from "react-router";
+import {Header} from "./components/header/Header.jsx";
+import {SettingsProvider} from "./context/SettingsContext.jsx";
 
 export const App = () => {
     return (
-        <Outlet/>
+        <SettingsProvider>
+            <Header/>
+            <Outlet/>
+        </SettingsProvider>
     );
 }

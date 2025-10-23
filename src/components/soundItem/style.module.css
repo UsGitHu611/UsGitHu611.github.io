@@ -19,6 +19,10 @@
     text-wrap: nowrap;
 }
 
+[data-color-scheme="light"] .phrase{
+    color: var(--background-main);
+}
+
 .info{
     display: flex;
     align-items: center;

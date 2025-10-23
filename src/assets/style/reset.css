@@ -55,6 +55,10 @@ textarea, select {
     font-size: inherit;
 }
 
+input{
+    margin: 0;
+}
+
 button {
     background-color: transparent;
     border: none;

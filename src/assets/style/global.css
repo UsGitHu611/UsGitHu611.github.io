@@ -9,15 +9,43 @@ html, body, #root {
 #root{
     display: grid;
     place-items: center;
-    min-height: 100svh;
     height: auto;
 }
 
 body {
-    background-color: var(--background-main);
+    overflow-x: hidden;
 }
 
 section{
     height: 100%;
 }
 
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: var(--color-main);
+        color: var(--background-main);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--background-main);
+        color: var(--color-main);
+    }
+}
+
+[data-color-scheme="dark"]:where(body, header){
+    background-color: var(--background-main);
+    color: var(--color-main);
+}
+
+[data-color-scheme="light"] body{
+    background-color: var(--color-main);
+    color: var(--background-main);
+}
+
+@media (max-width: 750px) {
+    button{
+        -webkit-tap-highlight-color: transparent;
+    }
+}
