@@ -1,6 +1,8 @@
 import styles from "./style.module.css";
 import {Link} from "react-router";
 import {Icon} from "../icon/Icon.jsx";
+import {useContext} from "react";
+import {settingsContext} from "../../context/SettingsContext.jsx";
 
 const headerItems = [
     {
@@ -21,6 +23,7 @@ const headerItems = [
 ];
 
 export const Header = () => {
+    const {isAllowTransition} = useContext(settingsContext);
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
@@ -31,7 +34,7 @@ export const Header = () => {
                                 className={styles.headerLink}
                                 aria-label={id}
                                 to={href}
-                                viewTransition
+                                viewTransition={isAllowTransition}
                             >
                                 <Icon url={icon}/>
                             </Link>

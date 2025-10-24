@@ -6,7 +6,12 @@ import {settingsContext} from "../../context/SettingsContext.jsx";
 
 export default function Settings(){
     const id = useId();
-    const {theme, toggleTheme} = useContext(settingsContext);
+    const {
+        theme,
+        toggleTheme,
+        isAllowTransition,
+        toggleViewTransition
+    } = useContext(settingsContext);
     return (
         <section className={styles.settingsSection}>
             <h1 className={styles.title}>
@@ -20,7 +25,11 @@ export default function Settings(){
                         htmlFor={`${id}-transition`}
                     >
                         Анимации
-                        <Toggle id={`${id}-transition`}/>
+                        <Toggle
+                            id={`${id}-transition`}
+                            isChecked={isAllowTransition}
+                            dispatch={toggleViewTransition}
+                        />
                     </label>
                 </li>
                 <li>

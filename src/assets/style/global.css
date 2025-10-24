@@ -44,6 +44,15 @@ section{
     color: var(--background-main);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        view-transition-name: none !important;
+    }
+}
+
+
 @media (max-width: 750px) {
     button{
         -webkit-tap-highlight-color: transparent;
