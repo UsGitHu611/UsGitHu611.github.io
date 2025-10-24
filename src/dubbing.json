@@ -10,319 +10,372 @@
         "id": "Dd1",
         "reference": "D1",
         "phrase": "По крайней мере бох меня любит..",
-        "time": "191:197"
+        "time": "191:197",
+        "slug": "po-krayney-mere-boh-menya-lyubit"
       },
       {
         "id": "Dd2",
         "reference": "D1",
         "phrase": "Вистинг момент",
-        "time": "292:300"
+        "time": "292:300",
+        "slug": "visting-moment"
       },
       {
         "id": "Dd3",
         "reference": "D1",
         "phrase": "Куча кримнерей",
-        "time": "390:395"
+        "time": "390:395",
+        "slug": "kucha-krimnerey"
       },
       {
         "id": "Dd4",
         "reference": "D1",
         "phrase": "Том! Том том том!",
-        "time": "637:643"
+        "time": "637:643",
+        "slug": "tom-tom-tom-tom"
       },
       {
         "id": "Dd5",
         "reference": "D1",
         "phrase": "Полу человек..Кроме одного тела..",
-        "time": "721:727"
+        "time": "721:727",
+        "slug": "polu-chelovek-krome-odnogo-tela"
       },
       {
         "id": "Dd6",
         "reference": "D1",
         "phrase": "Да! Но блин этоже ужасно не так ли!?",
-        "time": "791:795"
+        "time": "791:795",
+        "slug": "da-no-blin-etoje-uzhasno-ne-tak-li"
       },
       {
         "id": "Dd7",
         "reference": "D1",
         "phrase": "Не потеряй тебя там..",
-        "time": "1135:1139"
+        "time": "1135:1139",
+        "slug": "ne-poteryay-tebya-tam"
       },
       {
         "id": "Dd8",
         "reference": "D1",
         "phrase": "Делема о электрощетке №1 Начало",
-        "time": "1176:1180"
+        "time": "1176:1180",
+        "slug": "delema-o-elektroschetke-1-nachalo"
       },
       {
         "id": "Dd9",
         "reference": "D1",
         "phrase": "Сплатун",
-        "time": "1278:1280"
+        "time": "1278:1280",
+        "slug": "splatun"
       },
       {
         "id": "Dd10",
         "reference": "D1",
         "phrase": "Пошел отсюда к черту! Тупой ресурс",
-        "time": "1397:1401"
+        "time": "1397:1401",
+        "slug": "poshel-otsuda-k-chertu-tupoy-resurs"
       },
       {
         "id": "Dd11",
         "reference": "D1",
         "phrase": "Съедобный зомби-банк",
-        "time": "1484:1490"
+        "time": "1484:1490",
+        "slug": "sedobnyy-zombi-bank"
       },
       {
         "id": "Dd12",
         "reference": "D1",
         "phrase": "Переместить нельзя поставить. Статуя из мира Ната/Ноды",
-        "time": "1523:1537"
+        "time": "1523:1537",
+        "slug": "peremestit-nelzya-postavit-statuya-iz-mira-nata-nody"
       },
       {
         "id": "Dd13",
         "reference": "D1",
         "phrase": "Перевоплощение крик №1",
-        "time": "1595:1598"
+        "time": "1595:1598",
+        "slug": "perevoploshchenie-krik-1"
       },
       {
         "id": "Dd14",
         "reference": "D1",
         "phrase": "Майкл Джексон",
-        "time": "1680:1693"
+        "time": "1680:1693",
+        "slug": "maykl-dzhekson"
       },
       {
         "id": "Dd15",
         "reference": "D1",
         "phrase": "Мы переместили телевизор",
-        "time": "2011:2014"
+        "time": "2011:2014",
+        "slug": "my-peremestili-televizor"
       },
       {
         "id": "Dd16",
         "reference": "D1",
         "phrase": "Монолог о смерти / Fira",
-        "time": "2093:2108"
+        "time": "2093:2108",
+        "slug": "monolog-o-smerti-fira"
       },
       {
         "id": "Dd17",
         "reference": "D1",
         "phrase": "Вопли боли / Вечное заточение",
-        "time": "2115:2127"
+        "time": "2115:2127",
+        "slug": "vopli-boli-vechnoe-zatochenie"
       },
       {
         "id": "Dd18",
         "reference": "D1",
         "phrase": "Речь француза",
-        "time": "2132:2163"
+        "time": "2132:2163",
+        "slug": "rech-francuza"
       },
       {
         "id": "Dd19",
         "reference": "D1",
         "phrase": "AAAA АЪЪаааЪЪАЪъъАААА",
-        "time": "2177:2185"
+        "time": "2177:2185",
+        "slug": "aaaa-aaa-aaaa"
       },
       {
         "id": "Dd20",
         "reference": "D1",
         "phrase": "Я не уверен.. Просто я точно не знаю",
-        "time": "2190:2196"
+        "time": "2190:2196",
+        "slug": "ya-ne-uveren-prosto-ya-tochno-ne-znayu"
       },
       {
         "id": "Dd21",
         "reference": "D1",
         "phrase": "Камуфляжный брезент",
-        "time": "2217:2223"
+        "time": "2217:2223",
+        "slug": "kamuflazhnyy-brezent"
       },
       {
         "id": "Dd22",
         "reference": "D1",
         "phrase": "Посмотри на это!",
-        "time": "2262:2265"
+        "time": "2262:2265",
+        "slug": "posmotri-na-eto"
       },
       {
         "id": "Dd23",
         "reference": "D1",
         "phrase": "Резкий переход",
-        "time": "2267:2283"
+        "time": "2267:2283",
+        "slug": "rezkiy-perehod"
       },
       {
         "id": "Dd24",
         "reference": "D1",
         "phrase": "Кокетство",
-        "time": "2290:2301"
+        "time": "2290:2301",
+        "slug": "koketstvo"
       },
       {
         "id": "Dd25",
         "reference": "D1",
         "phrase": "Это место сильнее тебя!",
-        "time": "2358:2362"
+        "time": "2358:2362",
+        "slug": "eto-mesto-silnee-tebya"
       },
       {
         "id": "Dd26",
         "reference": "D1",
         "phrase": "Будь хорошей, ладно?",
-        "time": "2367:2371"
+        "time": "2367:2371",
+        "slug": "bud-horoshey-ladno"
       },
       {
         "id": "Dd27",
         "reference": "D1",
         "phrase": "Пока не сделаешь это!",
-        "time": "2375:2380"
+        "time": "2375:2380",
+        "slug": "poka-ne-sdelaesh-eto"
       },
       {
         "id": "Dd28",
         "reference": "D1",
         "phrase": "Боль бубенцов",
-        "time": "2404:2406"
+        "time": "2404:2406",
+        "slug": "bol-bubencov"
       },
       {
         "id": "Dd29",
         "reference": "D1",
         "phrase": "Не убивайте меня!",
-        "time": "2704:2708"
+        "time": "2704:2708",
+        "slug": "ne-ubivayte-menya"
       },
       {
         "id": "Dd30",
         "reference": "D1",
         "phrase": "Ты мне не нравишься!",
-        "time": "2822:2825"
+        "time": "2822:2825",
+        "slug": "ty-mne-ne-nravishsya"
       },
       {
         "id": "Dd31",
         "reference": "D1",
         "phrase": "Звуки хвоста",
-        "time": "3001:3011"
+        "time": "3001:3011",
+        "slug": "zvuki-hvosta"
       },
       {
         "id": "Dd32",
         "reference": "D1",
         "phrase": "Защити меня от тебя, душа моя..",
-        "time": "3030:3033"
+        "time": "3030:3033",
+        "slug": "zashchiti-menya-ot-tebya-dusha-moya"
       },
       {
         "id": "Dd33",
         "reference": "D1",
         "phrase": "Эмоции",
-        "time": "3059:3066"
+        "time": "3059:3066",
+        "slug": "emocii"
       },
       {
         "id": "Dd34",
         "reference": "D1",
         "phrase": "Просрал все, мне пиздец холодно",
-        "time": "3128:3132"
+        "time": "3128:3132",
+        "slug": "prosral-vse-mne-pizdec-holodno"
       },
       {
         "id": "Dd35",
         "reference": "D1",
         "phrase": "Перевоплощение крик №2",
-        "time": "3234:3239"
+        "time": "3234:3239",
+        "slug": "perevoploshchenie-krik-2"
       },
       {
         "id": "Dd36",
         "reference": "D1",
         "phrase": "Эти полеты, все еще там шумят",
-        "time": "3278:3283"
+        "time": "3278:3283",
+        "slug": "eti-poleti-vse-eschyo-tam-shumyat"
       },
       {
         "id": "Dd37",
         "reference": "D1",
         "phrase": "Откровения Сэнди",
-        "time": "3291:3304"
+        "time": "3291:3304",
+        "slug": "otkroveniya-sendi"
       },
       {
         "id": "Dd38",
         "reference": "D1",
         "phrase": "Военный приказ!",
-        "time": "3355:3362"
+        "time": "3355:3362",
+        "slug": "voennyy-prikaz"
       },
       {
         "id": "Dd39",
         "reference": "D1",
         "phrase": "Студент",
-        "time": "3502:3509"
+        "time": "3502:3509",
+        "slug": "student"
       },
       {
         "id": "Dd40",
         "reference": "D1",
         "phrase": "Я впорядке! Я впорядке!",
-        "time": "3554:3562"
+        "time": "3554:3562",
+        "slug": "ya-vporyadke-ya-vporyadke"
       },
       {
         "id": "Dd41",
         "reference": "D1",
         "phrase": "День кальянного национализма",
-        "time": "4324:4328"
+        "time": "4324:4328",
+        "slug": "den-kalyannogo-nacionalizma"
       },
       {
         "id": "Dd42",
         "reference": "D1",
         "phrase": "Здесь можно поесть борщ",
-        "time": "4339:4343"
+        "time": "4339:4343",
+        "slug": "zdes-mozhno-poest-borsch"
       },
       {
         "id": "Dd43",
         "reference": "D1",
         "phrase": "Приют круто!",
-        "time": "4417:4422"
+        "time": "4417:4422",
+        "slug": "priyut-kruto"
       },
       {
         "id": "Dd44",
         "reference": "D1",
         "phrase": "Хрум-хрум",
-        "time": "4437:4443"
+        "time": "4437:4443",
+        "slug": "hrum-hrum"
       },
       {
         "id": "Dd45",
         "reference": "D1",
         "phrase": "Возмущаясь своей привычке",
-        "time": "4469:4473"
+        "time": "4469:4473",
+        "slug": "vozmushayas-svoey-privychke"
       },
       {
         "id": "Dd46",
         "reference": "D1",
         "phrase": "Давай пошли, дружище",
-        "time": "4512:4515"
+        "time": "4512:4515",
+        "slug": "davay-poshli-druzhishche"
       },
       {
         "id": "Dd47",
         "reference": "D1",
         "phrase": "Сотрыти зомбээ",
-        "time": "4538:4542"
+        "time": "4538:4542",
+        "slug": "sotryti-zombee"
       },
       {
         "id": "Dd48",
         "reference": "D1",
         "phrase": "Центр управления, минутку",
-        "time": "4548:4552"
+        "time": "4548:4552",
+        "slug": "centr-upravleniya-minutku"
       },
       {
         "id": "Dd49",
         "reference": "D1",
         "phrase": "Брусчатка прилипла к стене",
-        "time": "4553:4556"
+        "time": "4553:4556",
+        "slug": "bruschatka-prilipla-k-stene"
       },
       {
         "id": "Dd50",
         "reference": "D1",
         "phrase": "Мы срём на пол!",
-        "time": "4598:4601"
+        "time": "4598:4601",
+        "slug": "my-srem-na-pol"
       },
       {
         "id": "Dd51",
         "reference": "D1",
         "phrase": "Кому не все равно..",
-        "time": "4627:4631"
+        "time": "4627:4631",
+        "slug": "komu-ne-vse-ravno"
       },
       {
         "id": "Dd52",
         "reference": "D1",
         "phrase": "Обратите внимание..",
-        "time": "4699:4704"
+        "time": "4699:4704",
+        "slug": "obratite-vnimanie"
       },
       {
         "id": "Dd53",
         "reference": "D1",
         "phrase": "Вытащи меня на красную площадь!",
-        "time": "4752:4756"
+        "time": "4752:4756",
+        "slug": "vytashchi-menya-na-krasnuyu-ploshchad"
       }
     ]
   },

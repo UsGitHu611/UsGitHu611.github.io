@@ -2,7 +2,7 @@ import {Button} from "../button/Button.jsx";
 import styles from "./style.module.css";
 import {CopyLinkButton} from "../copyLinkButton/CopyLinkButton.jsx";
 
-export const SoundItem = ({phrase, time, id, reference, index}) => {
+export const SoundItem = ({phrase, time, id, reference, index, slug}) => {
     return (
         <li className={styles.item}>
             <Button
@@ -19,7 +19,7 @@ export const SoundItem = ({phrase, time, id, reference, index}) => {
                 <CopyLinkButton
                     time={time}
                     reference={reference}
-                    phrase={phrase}
+                    slug={slug}
                 />
             </div>
         </li>

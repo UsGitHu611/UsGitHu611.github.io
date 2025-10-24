@@ -7,14 +7,11 @@ export const SoundList = () => {
     const {resultList} = useContext(searchContext);
     return (
         <ul className={styles.list}>
-            {resultList?.map(({id, phrase, time, reference}, index) => (
+            {resultList?.map((item, index) => (
                 <SoundItem
-                    key={id}
-                    id={id}
-                    phrase={phrase}
+                    key={item.id}
                     index={index}
-                    reference={reference}
-                    time={time}
+                    {...item}
                 />
             ))}
         </ul>
