@@ -1,0 +1,58 @@
+.inputWrapper{
+    position: sticky;
+    --padding: 0.9rem;
+    margin-block-end: 1.5rem;
+    top: calc(var(--header-height));
+    width: clamp(280px, 83vw, 800px);
+    display: flex;
+    margin-inline: auto;
+    z-index: 1;
+}
+
+
+@media (max-width: 750px) {
+    .inputWrapper{
+        top: calc(var(--header-height) - 55px);
+        width: 100%;
+    }
+}
+
+.labelIcon{
+    right: var(--padding);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: inherit
+}
+
+.input{
+    width: 100%;
+    padding-inline: 1.5rem;
+    padding-block: var(--padding);
+    border-radius: 9999px;
+    font-size: 1.2rem;
+    position: sticky;
+    outline: 2px solid transparent;
+    font-family: var(--fira-font), sans-serif;
+    transition: outline-color 200ms, opacity 300ms;
+}
+
+.input:focus{
+    opacity: 1 !important;
+    outline-color: gray;
+}
+
+@media (any-hover: hover) {
+    .input:hover{
+        opacity: 1 !important;
+    }
+}
+
+.input::placeholder{
+    font-size: 90%;
+}
+
+

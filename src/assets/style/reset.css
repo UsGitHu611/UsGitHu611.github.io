@@ -57,6 +57,12 @@ textarea, select {
 
 input{
     margin: 0;
+    border: none;
+    outline: none;
+}
+
+dialog{
+    border: none;
 }
 
 button {

@@ -4,4 +4,18 @@
     place-items: center;
     align-items: baseline;
     grid-gap: 1.5vw 1vw;
+    font-family: var(--fira-font), sans-serif;
+}
+
+.list::before{
+    position: fixed;
+    top: 50%;
+    content: "Список пуст (ˉ﹃ˉ)";
+    font-size: clamp(1.5rem, 1rem + 2vw, 6rem);
+    color: color-mix(in oklch, var(--background-main), white 27%);
+    display: none;
+}
+
+.list:empty::before{
+    display: block;
 }

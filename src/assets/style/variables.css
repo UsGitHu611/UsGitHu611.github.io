@@ -19,6 +19,7 @@
     --background-button: oklch(0.489 0 89.876);
     --color-phrase: lch(80.6% 0 139.09);
     --accent-color-hover: oklch(0.702 0.105 238.348 / 0.85);
+    --backdrop-color: rgb(0 0 0 / 55%);
 
     /* font-size */
     --dubbing-item-fz: 1.3rem;
