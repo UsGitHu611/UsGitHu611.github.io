@@ -12,19 +12,20 @@ export const DubbingSounds = () => {
     const {state} = useLocation();
     const sectionRef = useRef(null);
     const inputRef = useRef(null);
+    const backdropRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             const scrolled = entry.intersectionRatio <= 0;
             const target = inputRef.current;
-            const inputWrapper = target.parentElement;
-            if (scrolled){
+            const inputWrapper = target?.parentElement;
+            if (scrolled) {
                 if (window.matchMedia('(min-width: 1060px)').matches) {
                     inputWrapper.setAttribute("translate", "");
-                }else {
+                } else {
                     inputRef.current.style.opacity = 0.5;
                 }
-            }else {
+            } else {
                 inputWrapper.removeAttribute("translate");
                 inputRef.current.style.opacity = 1;
             }
@@ -40,11 +41,35 @@ export const DubbingSounds = () => {
             observer.disconnect();
         }
     }, []);
+
+    useEffect(() => {
+        const focusEventHandler = () => {
+            backdropRef.current.classList.add(styles.visible);
+            document.body.classList.add("locked");
+        }
+        const blurEventHandler = () => {
+            backdropRef.current.classList.remove(styles.visible);
+            document.body.classList.remove("locked");
+        }
+
+        if (window.matchMedia("(max-width: 750px)").matches) {
+            inputRef.current.addEventListener("focus", focusEventHandler);
+            inputRef.current.addEventListener("blur", blurEventHandler);
+        }
+
+        return () => {
+            if (inputRef.current) {
+                inputRef.current.removeEventListener("focus", focusEventHandler);
+                inputRef.current.removeEventListener("blur", blurEventHandler);
+            }
+        }
+    }, []);
     return (
         <SearchProvider list={state.list}>
             <section
                 className={styles.dubPage}
             >
+                <div className={styles.backdrop} ref={backdropRef}/>
                 <AudioProvider>
                     <h1
                         className={styles.title}

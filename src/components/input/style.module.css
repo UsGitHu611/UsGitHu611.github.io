@@ -1,41 +1,40 @@
-.inputWrapper{
+.inputWrapper {
     --padding: 0.9rem;
     --height-input-wrapper: 50px;
+    --width-input-wrapper: clamp(280px, 83vw, 800px);
     position: sticky;
     margin-block-end: 1.5rem;
     top: var(--header-height);
-        height: var(--height-input-wrapper);
-    width: clamp(280px, 83vw, 800px);
+    height: var(--height-input-wrapper);
+    width: var(--width-input-wrapper);
     display: flex;
     margin-inline: auto;
-    z-index: 1;
+    z-index: var(--z-index-input);
     transition: transform 200ms;
     transform: translateZ(0);
 }
 
-.inputWrapper[translate]{
+.inputWrapper[translate] {
     transform: translateY(
             calc(
                     (var(--height-input-wrapper) * -1)
                     - ((var(--header-height) - var(--height-input-wrapper)) / 2)
             )
     );
-    z-index: 1000000;
 }
 
 .inputWrapper:not([translate]) {
     transform: translateY(0);
-    z-index: 1000000;
 }
 
 @media (max-width: 750px) {
-    .inputWrapper{
+    .inputWrapper {
         top: calc(var(--header-height) - 55px);
         width: 100%;
     }
 }
 
-.labelIcon{
+.labelIcon {
     right: var(--padding);
     top: 50%;
     transform: translateY(-50%);
@@ -46,7 +45,7 @@
     opacity: inherit
 }
 
-.input{
+.input {
     width: 100%;
     padding-inline: 1.5rem;
     padding-block: var(--padding);
@@ -58,18 +57,18 @@
     transition: outline-color 200ms, opacity 300ms;
 }
 
-.input:focus{
+.input:focus {
     opacity: 1 !important;
     outline-color: gray;
 }
 
 @media (any-hover: hover) {
-    .input:hover{
+    .input:hover {
         opacity: 1 !important;
     }
 }
 
-.input::placeholder{
+.input::placeholder {
     font-size: 90%;
 }
 

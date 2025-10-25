@@ -7,7 +7,7 @@
     mask-size: cover;
     background-color: #e5e5e5;
     border-radius: 0.4rem;
-    transition: background-color 0.3s ease, opacity 00ms ease;
+    transition: background-color 0.3s ease;
     position: relative;
 }
 
@@ -15,6 +15,13 @@
     background-color: var(--background-main);
 }
 
-.copyLink:hover {
+@media (any-hover: hover) {
+    .copyLink:hover {
+        background-color: deepskyblue;
+    }
+}
+
+.copyLink:active {
     background-color: deepskyblue;
 }
+

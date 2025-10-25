@@ -19,7 +19,6 @@
     transition: background-color 300ms;
     background: linear-gradient(to left, #272727, color-mix(in hsl, #272727 90%, #ffffff 10%));
     position: relative;
-    z-index: 1;
 }
 
 .button:before{

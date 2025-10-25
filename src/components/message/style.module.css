@@ -1,0 +1,70 @@
+.message{
+    --width-message: clamp(10rem, 10rem + 2vw, 15rem);
+    width: var(--width-message);
+    height: calc(var(--width-message) / 4);
+    font-size: clamp(0.8rem, 0.8rem + 0.3vw, 1rem);
+    font-family: var(--fira-font), system-ui;
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    transition:
+            transform 400ms,
+            opacity 400ms,
+            display 400ms allow-discrete;
+    transform: translateY(100%);
+    opacity: 0;
+    border-radius: 0.5rem;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+[data-color-scheme="dark"] .messageText{
+    color: oklch(0.811 0.215 143.81 / 0.87);
+}
+
+[data-color-scheme="light"] .messageText {
+    color: oklch(0.439 0.148 142.767 / 0.9);
+}
+
+[data-color-scheme="dark"] .message{
+    background-color: color-mix(in oklch, var(--background-main), white 10%);
+    box-shadow: 0 0 11px var(--background-main);
+    color: var(--color-main);
+}
+
+[data-color-scheme="light"] .message{
+    background-color: var(--color-main);
+    box-shadow: 0 0 11px var(--background-main);
+    color: var(--background-main);
+}
+
+
+@media (max-width: 750px) {
+    .message{
+        bottom: calc(var(--header-height) + 0.3rem);
+        left: calc(50% - var(--width-message) / 2);
+    }
+}
+
+.message[data-show="true"]{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@supports (transition-behavior: allow-discrete) {
+    @starting-style {
+        .message[data-show="true"]{
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+}
+
+
+
+
+
+
