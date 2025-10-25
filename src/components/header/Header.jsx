@@ -20,7 +20,7 @@ const headerItems = [
 export const Header = () => {
     const {isAllowTransition} = useContext(settingsContext);
     return (
-        <header className={styles.header}>
+        <header id="header" className={styles.header}>
             <nav className={styles.nav}>
                 <ul className={styles.headerNavList}>
                     {headerItems.map(({id, href, icon}) => (

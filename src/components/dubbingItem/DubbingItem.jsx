@@ -11,8 +11,7 @@ export const DubbingItem = ({label, id, styleLogo, list, index}) => {
             className={styles.item}
             id={"dd" + id}
             style={{
-                backgroundColor: AVAILABLE_COLORS[index],
-                viewTransitionName: `item-${id}`
+                backgroundColor: AVAILABLE_COLORS[index]
             }}
         ><Link
             className={styles.link}
@@ -24,7 +23,9 @@ export const DubbingItem = ({label, id, styleLogo, list, index}) => {
             to={`/${id}`}
             viewTransition={isAllowTransition}
         >
-            <p style={{viewTransitionName: `title-${id}`}}>{label}</p>
+            <p style={{viewTransitionName: `title-${id}`}}>
+                {label}
+            </p>
         </Link>
         </li>
     );

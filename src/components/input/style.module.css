@@ -1,14 +1,32 @@
 .inputWrapper{
-    position: sticky;
     --padding: 0.9rem;
+    --height-input-wrapper: 50px;
+    position: sticky;
     margin-block-end: 1.5rem;
-    top: calc(var(--header-height));
+    top: var(--header-height);
+        height: var(--height-input-wrapper);
     width: clamp(280px, 83vw, 800px);
     display: flex;
     margin-inline: auto;
     z-index: 1;
+    transition: transform 200ms;
+    transform: translateZ(0);
 }
 
+.inputWrapper[translate]{
+    transform: translateY(
+            calc(
+                    (var(--height-input-wrapper) * -1)
+                    - ((var(--header-height) - var(--height-input-wrapper)) / 2)
+            )
+    );
+    z-index: 1000000;
+}
+
+.inputWrapper:not([translate]) {
+    transform: translateY(0);
+    z-index: 1000000;
+}
 
 @media (max-width: 750px) {
     .inputWrapper{

@@ -6,12 +6,12 @@ import {Icon} from "../icon/Icon.jsx";
 
 export const Input = ({ref}) => {
     const [value, setValue] = useState("");
-    const context = useContext(searchContext);
+    const {setInputValue} = useContext(searchContext);
     const debounceValue = useDebounce(value, 400);
     const id = useId();
 
     useEffect(() => {
-        context?.setInputValue(debounceValue);
+        setInputValue(debounceValue);
     }, [debounceValue]);
 
     return (

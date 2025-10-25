@@ -16,9 +16,16 @@ export const DubbingSounds = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             const scrolled = entry.intersectionRatio <= 0;
+            const target = inputRef.current;
+            const inputWrapper = target.parentElement;
             if (scrolled){
-                inputRef.current.style.opacity = 0.5;
+                if (window.matchMedia('(min-width: 1060px)').matches) {
+                    inputWrapper.setAttribute("translate", "");
+                }else {
+                    inputRef.current.style.opacity = 0.5;
+                }
             }else {
+                inputWrapper.removeAttribute("translate");
                 inputRef.current.style.opacity = 1;
             }
         }, {
@@ -33,27 +40,26 @@ export const DubbingSounds = () => {
             observer.disconnect();
         }
     }, []);
-
     return (
         <SearchProvider list={state.list}>
             <section
                 className={styles.dubPage}
-                style={{
-                    viewTransitionName: `item-${id}`
-                }}
             >
                 <AudioProvider>
                     <h1
                         className={styles.title}
                         ref={sectionRef}
                         style={{
+                            viewTransitionName: `title-${id}`,
                             fontFamily: `var(${FONT_DICT[id]})`,
                             ...state.styleLogo
                         }}
                     >
                         {state.label}
                     </h1>
+                    {state.list.length ? (
                         <Input ref={inputRef}/>
+                    ) : null}
                     <SoundList/>
                 </AudioProvider>
             </section>
