@@ -15,11 +15,16 @@ export const DubbingSounds = () => {
     const backdropRef = useRef(null);
 
     useEffect(() => {
+        if (!sectionRef.current) return;
+
         const observer = new IntersectionObserver(([entry]) => {
             const scrolled = entry.intersectionRatio <= 0;
             const target = inputRef.current;
             const inputWrapper = target?.parentElement;
-            if (scrolled) {
+
+            if (!target || !inputWrapper) return;
+
+            if (scrolled && inputRef.current) {
                 if (window.matchMedia('(min-width: 1060px)').matches) {
                     inputWrapper.setAttribute("translate", "");
                 } else {
@@ -43,26 +48,22 @@ export const DubbingSounds = () => {
     }, []);
 
     useEffect(() => {
-        const focusEventHandler = () => {
-            backdropRef.current.classList.add(styles.visible);
-            document.body.classList.add("locked");
-        }
-        const blurEventHandler = () => {
-            backdropRef.current.classList.remove(styles.visible);
-            document.body.classList.remove("locked");
+        const abortController = new AbortController();
+        const signal = abortController.signal;
+
+        if (window.matchMedia("(max-width: 750px)").matches && inputRef.current) {
+            inputRef.current.addEventListener("focus", () => {
+                backdropRef.current.classList.add(styles.visible);
+                document.body.classList.add("locked");
+            }, { signal });
+
+            inputRef.current.addEventListener("blur", () => {
+                backdropRef.current.classList.remove(styles.visible);
+                document.body.classList.remove("locked");
+            }, { signal });
         }
 
-        if (window.matchMedia("(max-width: 750px)").matches) {
-            inputRef.current.addEventListener("focus", focusEventHandler);
-            inputRef.current.addEventListener("blur", blurEventHandler);
-        }
-
-        return () => {
-            if (inputRef.current) {
-                inputRef.current.removeEventListener("focus", focusEventHandler);
-                inputRef.current.removeEventListener("blur", blurEventHandler);
-            }
-        }
+        return () => abortController.abort();
     }, []);
     return (
         <SearchProvider list={state.list}>
