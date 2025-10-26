@@ -41,6 +41,7 @@ export default function Settings(){
                         <Toggle
                             id={`${id}-theme`}
                             isChecked={theme === "dark"}
+                            className="themeToggle"
                             dispatch={toggleTheme}
                         />
                     </label>
