@@ -2,9 +2,7 @@
   {
     "id": "D1",
     "label": "The Suffering",
-    "styleLogo": {
-      "color": "rgb(223 224 89)"
-    },
+    "styleLogo": {},
     "list": [
       {
         "id": "Dd1",
@@ -544,7 +542,6 @@
     "id": "D2",
     "label": "Isaac Karaoke",
     "styleLogo": {
-      "color": "rgb(197, 174, 86)",
       "textShadow": "rgb(55, 49, 31) 6px 5px 0px"
     },
     "list": []
@@ -566,8 +563,6 @@
     "id": "D5",
     "label": "Psychonauts",
     "styleLogo": {
-      "color": "rgba(252, 224, 43, 0.97)",
-      "textShadow": "rgb(98, 247, 249) 2px 4px 1px",
       "fontSize": "clamp(3.5rem, 3rem + 5vw, 7rem)"
     },
     "list": []
@@ -576,7 +571,6 @@
     "id": "D6",
     "label": "Persona 3 Reload",
     "styleLogo": {
-      "color": "rgb(98, 216, 245)",
       "fontSize": "clamp(2.5rem, 2rem + 3vw, 5rem)",
       "textWrap": "auto"
     },
@@ -585,20 +579,13 @@
   {
     "id": "D7",
     "label": "Watchmen",
-    "styleLogo": {
-      "color": "rgba(241, 213, 25, 0.92)"
-    },
+    "styleLogo": {},
     "list": []
   },
   {
     "id": "D8",
     "label": "Star Wars:\nRepublic Commando",
     "styleLogo": {
-      "background": "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 2px, transparent 2px), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.6) 1px, transparent 1px), radial-gradient(circle at 40% 90%, rgba(255,255,255,0.7) 1.5px, transparent 1.5px), radial-gradient(circle at 60% 20%, rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(180deg, #E6F7FF 0%, #B3E0FF 25%, #99D5FF 50%, #66C2FF 75%, #3399FF 100%)",
-      "WebkitBackgroundClip": "text",
-      "WebkitTextFillColor": "transparent",
-      "backgroundClip": "text",
-      "color": "transparent",
       "textShadow": "2px 2px 4px rgba(0, 0, 0, 0.5)",
       "fontSize": "clamp(2.5rem, 2rem + 3vw, 5rem)",
       "whiteSpace": "pre-line"
@@ -609,12 +596,6 @@
     "id": "D9",
     "label": "Комментарии за 10 лет",
     "styleLogo": {
-      "background": "linear-gradient(90deg, #ff00ff 0%, #ee00ff 6%, #dd00ff 12%, #cc00ff 18%, #bb00ff 24%, #aa00ff 30%, #8866ff 36%, #6688ff 42%, #44aaff 48%, #22ccff 54%, #00ffff 60%, #00ffcc 66%, #00ff99 72%, #00ff66 78%, #00ff33 84%, #00ff00 90%, #ccff00 96%, #ffff00 100%)",
-      "WebkitBackgroundClip": "text",
-      "WebkitTextFillColor": "transparent",
-      "backgroundClip": "text",
-      "color": "transparent",
-      "WebkitTextStroke": "2.2px #000",
       "fontSize": "clamp(2.5rem, 2rem + 3vw, 5rem)"
     },
     "list": [

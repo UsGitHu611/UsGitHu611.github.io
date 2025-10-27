@@ -10,10 +10,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-[data-color-scheme="light"] .wrapperCheckbox{
-    background-color: var(--background-main);
-}
-
 .wrapperCheckbox:before{
     --width-circle: calc(var(--width-checkbox) / 2.4);
     content: "";
@@ -25,12 +21,8 @@
     right: 0.2rem;
     top: 50%;
     transform: translateY(-50%);
-    background-color: color-mix(in oklch, var(--accent-color-hover), blue 15%);
+    background-color: var(--background-main);
     transition: translate 500ms;
-}
-
-[data-color-scheme="light"] .wrapperCheckbox:before{
-    background-color: var(--color-main);
 }
 
 .checkbox{
@@ -42,12 +34,9 @@
     z-index: -1;
 }
 
-.wrapperCheckbox:has(:checked){
-    background-color: color-mix(in oklch, var(--accent-color-hover), white 60%);
-}
-
-[data-color-scheme="light"] .wrapperCheckbox:has(:checked){
-    background-color: var(--accent-color-hover);
+.wrapperCheckbox:has(:checked),
+.wrapperCheckbox.themeToggle:not(:has(:checked)){
+    background-color: oklch(0.841 0.089 227.079);
 }
 
 .wrapperCheckbox:has(:checked)::before{
@@ -55,7 +44,7 @@
 }
 
 .wrapperCheckbox.themeToggle:has(:checked){
-    background-color: oklch(0.349 0.107 272.11);
+    background-color: oklch(0.365 0.101 273.139);
 }
 
 @keyframes fade-in-cloud {
@@ -96,9 +85,9 @@
     animation: fade-in-star 300ms both;
 }
 
-.wrapperCheckbox.themeToggle:not(:has(:checked)) i:nth-child(-n + 4){
+.wrapperCheckbox.themeToggle:not(:has(:checked)) i:nth-child(-n + 2){
     animation: fade-in-cloud 400ms ease both;
-    color: var(--color-main);
+    color: var(--background-main);
     position: absolute;
 }
 
@@ -149,10 +138,6 @@
     filter:
             drop-shadow(0 0 5px rgba(175, 175, 175, 0.68))
             drop-shadow(0 0 5px rgba(175, 175, 175, 0.68));
-}
-
-.wrapperCheckbox.themeToggle:not(:has(:checked)){
-    background-color: oklch(0.7582 0.1301 240.35);
 }
 
 .wrapperCheckbox.themeToggle:not(:has(:checked)):before{

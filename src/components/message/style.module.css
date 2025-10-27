@@ -19,28 +19,10 @@
     justify-content: center;
     align-items: center;
     pointer-events: none;
-}
-
-[data-color-scheme="dark"] .messageText{
-    color: oklch(0.811 0.215 143.81 / 0.87);
-}
-
-[data-color-scheme="light"] .messageText {
-    color: oklch(0.439 0.148 142.767 / 0.9);
-}
-
-[data-color-scheme="dark"] .message{
-    background-color: color-mix(in oklch, var(--background-main), white 10%);
-    box-shadow: 0 0 11px var(--background-main);
     color: var(--color-main);
+    background-color: var(--background-main);
+    border: 1px solid var(--color-main);
 }
-
-[data-color-scheme="light"] .message{
-    background-color: var(--color-main);
-    box-shadow: 0 0 11px var(--background-main);
-    color: var(--background-main);
-}
-
 
 @media (max-width: 750px) {
     .message{

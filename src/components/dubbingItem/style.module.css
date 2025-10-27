@@ -1,6 +1,6 @@
 .item {
     border-radius: 9999px;
-    color: var(--color-main);
+    color: oklch(0.9214 0 50);
     font-size: var(--dubbing-item-fz);
     font-family: sans-serif;
     user-select: none;

@@ -5,14 +5,10 @@
     -webkit-mask-image: url("/public/icons/link.svg");
     mask-repeat: no-repeat;
     mask-size: cover;
-    background-color: #e5e5e5;
+    background-color: var(--color-main);
     border-radius: 0.4rem;
     transition: background-color 0.3s ease;
     position: relative;
-}
-
-[data-color-scheme="light"] .copyLink{
-    background-color: var(--background-main);
 }
 
 @media (any-hover: hover) {

@@ -9,7 +9,7 @@
 
 .button::after{
     content: attr(data-first-symbol);
-    color: var(--color-main);
+    color: oklch(0.9214 0 50);
     font-family: monospace;
     font-size: 3.5rem;
     position: absolute;

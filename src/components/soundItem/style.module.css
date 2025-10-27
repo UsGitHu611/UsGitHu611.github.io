@@ -8,7 +8,7 @@
 }
 
 .phrase{
-    color: var(--color-phrase);
+    color: var(--color-main);
     font-size: 0.8rem;
     text-align: center;
     quotes: "«" "»";
@@ -17,10 +17,6 @@
     max-width: 100px;
     overflow: hidden;
     text-wrap: nowrap;
-}
-
-[data-color-scheme="light"] .phrase{
-    color: var(--background-main);
 }
 
 .info{

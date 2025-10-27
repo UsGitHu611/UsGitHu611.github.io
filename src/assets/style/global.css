@@ -2,47 +2,52 @@ html, body, #root {
     min-height: 100dvh;
 }
 
-#root{
+html {
+    scroll-behavior: smooth;
+}
+
+#root {
     display: grid;
     place-items: center;
     height: auto;
 }
 
-body {}
+body{
+    background-color: var(--background-main);
+}
 
 body.locked {
     overflow-y: hidden;
     touch-action: none;
     overscroll-behavior: contain;
-
 }
 
-section{
+section {
     height: 100%;
 }
 
 @media (prefers-color-scheme: light) {
-    body{
-        background-color: var(--color-main);
-        color: var(--background-main);
+    :root{
+        --color-main: oklch(0.2181 0 50);
+        --background-main: oklch(0.9214 0 50);
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    body{
-        background-color: var(--background-main);
-        color: var(--color-main);
+    :root{
+        --color-main: oklch(0.9214 0 50);
+        --background-main: oklch(0.2181 0 50);
     }
 }
 
-[data-color-scheme="dark"]:where(body, header){
-    background-color: var(--background-main);
-    color: var(--color-main);
+[data-color-scheme="dark"] {
+    --color-main: oklch(0.9214 0 50);
+    --background-main: oklch(0.2181 0 50);
 }
 
-[data-color-scheme="light"] body{
-    background-color: var(--color-main);
-    color: var(--background-main);
+[data-color-scheme="light"]{
+    --color-main: oklch(0.2181 0 50);
+    --background-main: oklch(0.9214 0 50);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -55,7 +60,7 @@ section{
 
 
 @media (max-width: 750px) {
-    button{
+    button {
         -webkit-tap-highlight-color: transparent;
     }
 }

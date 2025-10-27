@@ -16,40 +16,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 300ms;
     background: linear-gradient(to left, #272727, color-mix(in hsl, #272727 90%, #ffffff 10%));
-    position: relative;
+    transition: transform 300ms;
 }
-
-.button:before{
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-    inset: 0;
-    z-index: -1;
-    transform: scale(0.8);
-    background: linear-gradient(to right, #272727, color-mix(in hsl, #272727 90%, #ffffff 10%));
-}
-
 
 .icon{
     color: var(--color-main);
-    transition: color 300ms;
 }
 
-.button:hover .icon{
-    color: rgba(0, 191, 255, 0.54);
-}
-
-.title{
-    font-family: Inter, sans-serif;
-    text-wrap: balance;
-    color: var(--color-main);
-    font-weight: 400;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-[data-color-scheme="light"] .title{
-    color: var(--background-main);
+.button:hover{
+    transform: scale(1.1);
 }

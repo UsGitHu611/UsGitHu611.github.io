@@ -6,8 +6,8 @@
 }
 
 .title{
-    color: var(--color-main);
     font-size: var(--font-size-display);
+    color: var(--color-main);
     text-align: center;
     font-weight: inherit;
     padding-block: calc(var(--header-height) + 0.3rem) 1.5rem;
