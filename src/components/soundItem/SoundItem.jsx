@@ -2,9 +2,9 @@ import {Button} from "../button/Button.jsx";
 import styles from "./style.module.css";
 import {CopyLinkButton} from "../copyLinkButton/CopyLinkButton.jsx";
 
-export const SoundItem = ({phrase, time, id, reference, index, slug}) => {
+export const SoundItem = ({phrase, time, id, reference, index, slug, ref}) => {
     return (
-        <li className={styles.item}>
+        <li className={styles.item} ref={ref}>
             <Button
                 time={time}
                 id={id}

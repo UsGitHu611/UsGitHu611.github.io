@@ -8,8 +8,6 @@ export const FONT_DICT = {
     "D9": "--commenti-font",
 };
 
-
-
 export const AVAILABLE_COLORS = [
     "hsl(163deg 15% 45%)",
     "hsl(187deg 20% 50%)",

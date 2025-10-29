@@ -1,19 +1,20 @@
 import {SoundItem} from "../soundItem/SoundItem.jsx";
 import styles from "./style.module.css";
-import {useContext} from "react";
-import {searchContext} from "../../context/SearchContext.jsx";
+import {InfiniteScroll} from "../infiniteScroll/InfiniteScroll.jsx";
 
 export const SoundList = () => {
-    const {resultList} = useContext(searchContext);
     return (
-        <ul className={styles.list}>
-            {resultList?.map((item, index) => (
+        <InfiniteScroll
+            className={styles.list}
+        >
+            {(item, index, liRef) => (
                 <SoundItem
                     key={item.id}
                     index={index}
+                    ref={liRef}
                     {...item}
                 />
-            ))}
-        </ul>
+            )}
+        </InfiniteScroll>
     );
 }
