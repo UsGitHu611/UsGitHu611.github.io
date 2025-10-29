@@ -541,10 +541,124 @@
   {
     "id": "D2",
     "label": "Isaac Karaoke",
-    "styleLogo": {
-      "textShadow": "rgb(55, 49, 31) 6px 5px 0px"
-    },
-    "list": []
+    "styleLogo": {},
+    "list": [
+      {
+        "id": "Dd1",
+        "reference": "D2",
+        "phrase": "О боже мой, я весь высох",
+        "time": "39:41"
+      },
+      {
+        "id": "Dd2",
+        "reference": "D2",
+        "phrase": "Перевернул инкасатор",
+        "time": "128:132"
+      },
+      {
+        "id": "Dd3",
+        "phrase": "Успех как жест безумия",
+        "reference": "D2",
+        "time": "145:148"
+      },
+      {
+        "id": "Dd4",
+        "phrase": "Гусар, толпа",
+        "reference": "D2",
+        "time": "150:153"
+      },
+      {
+        "id": "Dd5",
+        "phrase": "Процесс долгого забега",
+        "reference": "D2",
+        "time": "245:249"
+      },
+      {
+        "id": "Dd6",
+        "phrase": "Голубые шашки",
+        "reference": "D2",
+        "time": "255:262"
+      },
+      {
+        "id": "Dd7",
+        "phrase": "Ебаныца",
+        "reference": "D2",
+        "time": "276:281"
+      },
+      {
+        "id": "Dd8",
+        "phrase": "Как ты это сделал?)",
+        "reference": "D2",
+        "time": "311:313"
+      },
+      {
+        "id": "Dd9",
+        "phrase": "Не правильно почти все",
+        "reference": "D2",
+        "time": "320:326"
+      },
+      {
+        "id": "Dd10",
+        "phrase": "Брат убьет брата",
+        "reference": "D2",
+        "time": "413:417"
+      },
+      {
+        "id": "Dd11",
+        "phrase": "Змеи шепчут",
+        "reference": "D2",
+        "time": "454:461"
+      },
+      {
+        "id": "Dd12",
+        "phrase": "Счастье будет в мечтах",
+        "reference": "D2",
+        "time": "465:472"
+      },
+      {
+        "id": "Dd13",
+        "phrase": "Столичный, на своих руках",
+        "reference": "D2",
+        "time": "530:544"
+      },
+      {
+        "id": "Dd14",
+        "phrase": "Голубец бросил пиццу!",
+        "reference": "D2",
+        "time": "646:650"
+      },
+      {
+        "id": "Dd15",
+        "phrase": "Где я сейчас?",
+        "reference": "D2",
+        "time": "672:679"
+      },
+      {
+        "id": "Dd16",
+        "phrase": "Посоветуйся с ними, чувак!",
+        "reference": "D2",
+        "time": "808:811"
+      },
+      {
+        "id": "Dd17",
+        "phrase": "О! Ты идиот!",
+        "reference": "D2",
+        "time": "1149:1153"
+      },
+      {
+        "id": "Dd18",
+        "phrase": "Ах, моя маленькая разбитая машинка",
+        "reference": "D2",
+        "time": "1197:1202"
+      },
+      {
+        "id": "Dd19",
+        "phrase": "Пощадите меня!",
+        "reference": "D2",
+        "time": "1333:1342"
+      }
+
+    ]
   },
   {
     "id": "D3",

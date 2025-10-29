@@ -12,7 +12,7 @@
     top: 50%;
     content: "Список пуст (ˉ﹃ˉ)";
     font-size: clamp(1.5rem, 1rem + 2vw, 6rem);
-    color: color-mix(in oklch, var(--background-main), white 27%);
+    color: var(--color-main);
     display: none;
 }
 
