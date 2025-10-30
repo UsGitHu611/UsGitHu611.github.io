@@ -1,0 +1,21 @@
+.soundButton {
+    aspect-ratio: 1 / 1;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+}
+
+@media (any-hover: hover) {
+    .soundButton:hover {
+        filter: invert(1);
+        backdrop-filter: invert(0);
+    }
+}
+
+.soundButton:active {
+    filter: invert(1);
+    backdrop-filter: invert(0);
+}
+

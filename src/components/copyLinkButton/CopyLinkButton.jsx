@@ -1,38 +1,22 @@
-import styles from "./style.module.css";
-import {useEffect, useState} from "react";
+import {useMessage} from "../../assets/hook/useMessage.js";
+import {SoundButton} from "../soundButton/SoundButton.jsx";
 import {Message} from "../message/Message.jsx";
+import {copyLink} from "../../assets/js/helper.js";
 
-export const CopyLinkButton = ({time, reference, slug}) => {
-    const [showMessage, setShowMessage] = useState(false);
-    const copyLinkHandler = async () => {
-        if (showMessage) return;
-        setShowMessage(true);
-        const urlWithTimeCode = `${location.host}#/player?reference=${reference}&time=${time}&phrase=${slug}`;
-        await navigator.clipboard.writeText(urlWithTimeCode);
-    }
-
-    useEffect(() => {
-        if (!showMessage) return;
-        const timer = setTimeout(() => setShowMessage(false), 2500);
-        return () => clearTimeout(timer);
-    }, [showMessage]);
-
+export const CopyLinkButton = ({linkData}) => {
+    const {messageHandler, showMessage} = useMessage(() =>
+        copyLink(linkData)
+    );
     return (
-        <>
-            <button
-                className={styles.copyLink}
-                title="Копировать URL"
-                onClick={copyLinkHandler}
-            >
-            </button>
-            {
-                showMessage
-                    ? <Message
-                        message="Скопированно! &#128515;"
-                        showMessage={showMessage}
-                    />
-                    : null
-            }
-        </>
-    )
+        <SoundButton
+            onClick={messageHandler}
+            title="Копировать URL"
+            icon="link"
+        >
+            <Message
+                message="Скопировано! &#128515;"
+                showMessage={showMessage}
+            />
+        </SoundButton>
+    );
 }

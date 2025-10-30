@@ -8,7 +8,7 @@ export const Toggle = ({id, dispatch, isChecked, className}) => {
                 Array.from({length: isChecked ? 4 : 2}).map((_, i) => (
                     <Icon
                         key={i}
-                        url={isChecked ? "/icons/star.svg" : "/icons/cloud.svg"}
+                        url={isChecked ? "star" : "cloud"}
                     />
                 ))
             )}

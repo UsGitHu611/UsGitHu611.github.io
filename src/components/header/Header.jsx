@@ -8,12 +8,12 @@ const headerItems = [
     {
         id: "home",
         href: "/",
-        icon: "/icons/home.svg"
+        icon: "home"
     },
     {
         id: "settings",
         href: "/settings",
-        icon: "/icons/settings.svg"
+        icon: "settings"
     }
 ];
 

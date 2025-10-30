@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import {createPortal} from "react-dom";
 
 export const Message = ({message, showMessage}) => {
-    return createPortal(
+    return showMessage ? createPortal(
         <div
             className={styles.message}
             data-show={showMessage}
@@ -11,6 +11,6 @@ export const Message = ({message, showMessage}) => {
                 {message}
             </p>
         </div>,
-        document.getElementById("root")
-    );
+        document.body
+    ) : null;
 }

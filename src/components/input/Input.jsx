@@ -26,7 +26,7 @@ export const Input = ({ref}) => {
                 type="text"
             />
             <label className={styles.labelIcon} htmlFor={id}>
-                <Icon url="/icons/search.svg"/>
+                <Icon url="search"/>
             </label>
         </div>
     );

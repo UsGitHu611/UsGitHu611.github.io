@@ -8,7 +8,37 @@ export const InfiniteScroll = ({children, className}) => {
     const {resultList} = useContext(searchContext);
     const lastItemRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
-    const [array, setArray] = useState(resultList.slice(0, ITEM_PER_PAGE));
+
+    const getFavoriteIds = () => {
+        try {
+            const favorites = localStorage.getItem('favorites');
+            return favorites ? JSON.parse(favorites) : [];
+        } catch {
+            return [];
+        }
+    };
+
+    const getSortedArray = (list) => {
+        const favoriteIds = getFavoriteIds();
+
+        return [...list].sort((a, b) => {
+            const aIsFavorite = favoriteIds.includes(a.id);
+            const bIsFavorite = favoriteIds.includes(b.id);
+
+            if (aIsFavorite && !bIsFavorite) return -1;
+            if (!aIsFavorite && bIsFavorite) return 1;
+            return 0;
+        });
+    };
+
+    const [array, setArray] = useState(() =>
+        resultList.length > 0 ? getSortedArray(resultList).slice(0, ITEM_PER_PAGE) : []
+    );
+
+    useEffect(() => {
+        const sortedList = getSortedArray(resultList);
+        setArray(sortedList.slice(0, ITEM_PER_PAGE));
+    }, [resultList]);
 
     useEffect(() => {
         if (!lastItemRef.current) return;
@@ -18,14 +48,15 @@ export const InfiniteScroll = ({children, className}) => {
             if (isScroll && !isLoading && array.length < resultList.length) {
                 setIsLoading(true);
                 setTimeout(() => {
-                    setArray(prev => resultList.slice(0, prev.length + ITEM_PER_PAGE));
+                    const sortedList = getSortedArray(resultList);
+                    setArray(prev => sortedList.slice(0, prev.length + ITEM_PER_PAGE));
                     setIsLoading(false);
-                }, 750);
+                }, 300);
             }
 
         }, {
             root: null,
-            rootMargin: "0px 0px 50px 0px",
+            rootMargin: "0px 0px 70px 0px",
             threshold: 0.1
         });
 
@@ -34,7 +65,7 @@ export const InfiniteScroll = ({children, className}) => {
         return () => {
             observer.disconnect();
         }
-    }, [resultList, isLoading, array])
+    }, [resultList.length, isLoading, array])
 
     return (
         <>

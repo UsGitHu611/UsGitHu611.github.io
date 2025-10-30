@@ -11,10 +11,10 @@ export const SearchProvider = ({children, list = []}) => {
             return list;
         }
         const searchTerm = inputValue.toLowerCase().trim();
-        return list.filter((value) =>
-            value.phrase.toLowerCase().startsWith(searchTerm)
+        return list.filter(({phrase}) =>
+            phrase.toLowerCase().includes(searchTerm)
         );
-    }, [inputValue, list]);
+    }, [list, inputValue]);
 
     const contextValue = useMemo(() => ({
         resultList,

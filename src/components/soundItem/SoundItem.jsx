@@ -1,8 +1,12 @@
 import {Button} from "../button/Button.jsx";
 import styles from "./style.module.css";
+import {SoundButton} from "../soundButton/SoundButton.jsx";
+import {useSound} from "../../assets/hook/useSound.js";
 import {CopyLinkButton} from "../copyLinkButton/CopyLinkButton.jsx";
+import {FavoritesButton} from "../favoritesButton/FavoritesButton.jsx";
 
 export const SoundItem = ({phrase, time, id, reference, index, slug, ref}) => {
+    const {playAudioHandler} = useSound({reserveTime: time, reserveReference: reference});
     return (
         <li className={styles.item} ref={ref}>
             <Button
@@ -12,14 +16,20 @@ export const SoundItem = ({phrase, time, id, reference, index, slug, ref}) => {
                 index={index}
                 firstSymbol={phrase[0]}
             />
+            <q className={styles.phrase} title={phrase}>
+                {phrase}
+            </q>
             <div className={styles.info}>
-                <q className={styles.phrase} title={phrase}>
-                    {phrase}
-                </q>
                 <CopyLinkButton
-                    time={time}
-                    reference={reference}
-                    slug={slug}
+                    linkData={{reference, time, slug}}
+                />
+                <SoundButton
+                    onClick={playAudioHandler}
+                    title="Играть"
+                    icon="play"
+                />
+                <FavoritesButton
+                    favoritesSoundId={id}
                 />
             </div>
         </li>

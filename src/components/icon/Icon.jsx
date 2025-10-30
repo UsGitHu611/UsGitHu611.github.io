@@ -5,8 +5,8 @@ export const Icon = ({url, style}) => {
         <i
             className={styles.icon}
             style={{
-                WebkitMaskImage: `url(${url})`,
-                maskImage: `url(${url})`,
+                WebkitMaskImage: `url(/icons/${url}.svg)`,
+                maskImage: `url(/icons/${url}.svg)`,
                 ...style
             }}
         ></i>

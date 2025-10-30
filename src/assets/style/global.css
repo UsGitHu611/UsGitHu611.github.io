@@ -43,11 +43,14 @@ section {
 [data-color-scheme="dark"] {
     --color-main: oklch(0.9214 0 50);
     --background-main: oklch(0.2181 0 50);
+    --modal-background: oklch(0.264 0 89.876);
 }
 
 [data-color-scheme="light"]{
     --color-main: oklch(0.2181 0 50);
     --background-main: oklch(0.9214 0 50);
+    --hover-background: oklch(0.468 0 89.876 / 0.85);
+    --modal-background: oklch(0.524 0 89.876);
 }
 
 @media (prefers-reduced-motion: reduce) {
