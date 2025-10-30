@@ -30,6 +30,7 @@ export const SoundItem = ({phrase, time, id, reference, index, slug, ref}) => {
                 />
                 <FavoritesButton
                     favoritesSoundId={id}
+                    favoritesReference={reference}
                 />
             </div>
         </li>

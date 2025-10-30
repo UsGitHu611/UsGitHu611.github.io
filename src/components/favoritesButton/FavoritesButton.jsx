@@ -3,12 +3,12 @@ import {SoundButton} from "../soundButton/SoundButton.jsx";
 import {Message} from "../message/Message.jsx";
 import {addFavorites} from "../../assets/js/helper.js";
 
-export const FavoritesButton = ({favoritesSoundId}) => {
+export const FavoritesButton = ({favoritesSoundId, favoritesReference}) => {
     const {messageHandler, showMessage} = useMessage(() =>
-        addFavorites(favoritesSoundId)
+        addFavorites(favoritesSoundId, favoritesReference)
     );
     const isActiveCurrentItem =
-        localStorage.getItem("favorites")?.includes(favoritesSoundId)
+        localStorage.getItem("favorites")?.includes(`${favoritesSoundId}:${favoritesReference}`)
     return (
         <SoundButton
             onClick={messageHandler}

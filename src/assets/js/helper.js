@@ -3,12 +3,13 @@ export const copyLink = async ({reference, time, slug}) => {
     await navigator.clipboard.writeText(urlWithTimeCode);
 }
 
-export const addFavorites = (soundId) => {
+export const addFavorites = (soundId, soundRef) => {
     const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
-    const existingSoundId = favorites.find((id) => id === soundId);
+    const idStr = `${soundId}:${soundRef}`;
+    const existingSoundId = favorites.find((id) => id === idStr);
 
     if (existingSoundId) return;
 
-    favorites.push(soundId);
+    favorites.push(idStr);
     localStorage.setItem("favorites", JSON.stringify(favorites));
 }
