@@ -1,4 +1,4 @@
-import {useContext, useEffect, useRef, useState} from "react";
+import {useContext, useEffect, useMemo, useRef, useState} from "react";
 import {searchContext} from "../../context/SearchContext.jsx";
 import {Loader} from "../loader/Loader.jsx";
 
@@ -18,27 +18,28 @@ export const InfiniteScroll = ({children, className}) => {
         }
     };
 
-    const getSortedArray = (list) => {
+    const sortedList = useMemo(() => {
         const favoriteIds = getFavoriteIds();
 
-        return [...list].sort((a, b) => {
-            const aIsFavorite = favoriteIds.includes(a.id);
-            const bIsFavorite = favoriteIds.includes(b.id);
+        return [...resultList].sort((a, b) => {
+            const aIsFavorite =
+                favoriteIds.includes(`${a.id}:${a.reference}`);
+            const bIsFavorite =
+                favoriteIds.includes(`${b.id}:${b.reference}`);
 
             if (aIsFavorite && !bIsFavorite) return -1;
             if (!aIsFavorite && bIsFavorite) return 1;
             return 0;
         });
-    };
+    }, [resultList]);
 
     const [array, setArray] = useState(() =>
-        resultList.length > 0 ? getSortedArray(resultList).slice(0, ITEM_PER_PAGE) : []
+        sortedList.length > 0 ? sortedList.slice(0, ITEM_PER_PAGE) : []
     );
 
     useEffect(() => {
-        const sortedList = getSortedArray(resultList);
         setArray(sortedList.slice(0, ITEM_PER_PAGE));
-    }, [resultList]);
+    }, [sortedList]);
 
     useEffect(() => {
         if (!lastItemRef.current) return;
@@ -48,7 +49,6 @@ export const InfiniteScroll = ({children, className}) => {
             if (isScroll && !isLoading && array.length < resultList.length) {
                 setIsLoading(true);
                 setTimeout(() => {
-                    const sortedList = getSortedArray(resultList);
                     setArray(prev => sortedList.slice(0, prev.length + ITEM_PER_PAGE));
                     setIsLoading(false);
                 }, 300);
@@ -65,7 +65,7 @@ export const InfiniteScroll = ({children, className}) => {
         return () => {
             observer.disconnect();
         }
-    }, [resultList.length, isLoading, array])
+    }, [sortedList, isLoading, array])
 
     return (
         <>

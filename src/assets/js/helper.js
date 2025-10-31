@@ -6,10 +6,13 @@ export const copyLink = async ({reference, time, slug}) => {
 export const addFavorites = (soundId, soundRef) => {
     const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
     const idStr = `${soundId}:${soundRef}`;
-    const existingSoundId = favorites.find((id) => id === idStr);
+    const existingSoundIdIndex = favorites.findIndex((id) => id === idStr);
 
-    if (existingSoundId) return;
-
-    favorites.push(idStr);
-    localStorage.setItem("favorites", JSON.stringify(favorites));
+    if (existingSoundIdIndex !== -1) {
+        favorites.splice(existingSoundIdIndex, 1);
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+    }else {
+        favorites.push(idStr);
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+    }
 }

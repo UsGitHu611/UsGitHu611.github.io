@@ -13,7 +13,7 @@ export const FavoritesButton = ({favoritesSoundId, favoritesReference}) => {
         <SoundButton
             onClick={messageHandler}
             title="Добавить в избранное"
-            icon="star-outline"
+            icon="star"
             active={isActiveCurrentItem}
         >
             <Message
