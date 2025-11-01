@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "mobile": "node start-modile.js",
+    "mobile": "node start-mobile.js",
     "build": "vite build",
     "deploy": "gh-pages -d docs",
     "lint": "eslint .",
